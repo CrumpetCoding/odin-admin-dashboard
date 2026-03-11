@@ -19,7 +19,7 @@ body {
     grid-row-end: 3;
     padding: 10px;
     background-color: chartreuse;
-
+    padding-left: 30px;
 }
 
 #main {
@@ -49,4 +49,17 @@ body {
     position: absolute;
     padding-top: 2px;
     padding-left: 10px;
+}
+
+#side-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+    gap: 25px;
+}
+
+#side-link:hover {
+    color: white;
+    cursor: pointer;
 }
