@@ -54,12 +54,18 @@ body {
 #side-link {
     display: flex;
     flex-direction: row;
+    flex: 2;
     align-items: center;
     font-weight: bold;
     gap: 25px;
 }
 
 #side-link:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#search-icon:hover {
     color: white;
     cursor: pointer;
 }
