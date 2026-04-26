@@ -18,7 +18,8 @@ body {
     grid-row-start: 1;
     grid-row-end: 3;
     padding: 10px;
-    background-color: chartreuse;
+    background-color: dodgerblue;
+    color: white;
     padding-left: 30px;
 }
 
@@ -29,15 +30,23 @@ body {
 }
 
 #header {
-    grid-column-start: 2;
-    grid-column-end: 6;
+    display: grid;
+    grid-template-areas:
+        "search profile"
+        "header links";
+    grid-template-rows: 30px;
     padding: 10px;
-    background-color: darkred;
+    background-color: white;
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
 }
 
 #search-bar {
     height: 25px;
-    width: 50%;
+    width: 75%;
     border-radius: 1rem;
     border-style: none;
     margin-left: 45px;
@@ -61,7 +70,7 @@ body {
 }
 
 #side-link:hover {
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -70,6 +79,20 @@ body {
     cursor: pointer;
 }
 
+#notifications-icon:hover {
+    color: white;
+    cursor: pointer;
+}
+
 #side-lower {
     padding-top: 50px
+}
+
+#profile {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 30px;
 }
