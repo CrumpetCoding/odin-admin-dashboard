@@ -69,3 +69,7 @@ body {
     color: white;
     cursor: pointer;
 }
+
+#side-lower {
+    padding-top: 50px
+}
