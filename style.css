@@ -34,7 +34,7 @@ body {
     grid-template-areas:
         "search profile"
         "header links";
-    grid-template-rows: 30px;
+    grid-template-rows: 30% 70%;
     padding: 10px;
     background-color: white;
 }
@@ -49,14 +49,10 @@ body {
     width: 75%;
     border-radius: 1rem;
     border-style: none;
-    margin-left: 45px;
-    padding-left: 10px;
     background-color: rgb(193, 193, 193);
 }
 
 #search-icon {
-    position: absolute;
-    padding-top: 2px;
     padding-left: 10px;
 }
 
@@ -88,6 +84,12 @@ body {
     padding-top: 50px
 }
 
+#search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 #profile {
     display: flex;
     gap: 20px;
@@ -95,4 +97,10 @@ body {
     flex-direction: row;
     align-items: center;
     padding-right: 30px;
+}
+
+#content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
